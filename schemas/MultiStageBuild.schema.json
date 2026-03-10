@@ -4,9 +4,9 @@
     "description": "Multi-stage building recipes with MultiStageBuild_{Type}_{Action} pattern",
     "type": "object",
     "patternProperties": {
-        "^MultiStageBuild_[A-Za-z0-9_]+_[0-9]+$": {
+        "^MultiStageBuild_[A-Za-z0-9_]+$": {
             "type": "string",
-            "description": "Pattern: MultiStageBuild_{Type}_{Action} (e.g., MultiStageBuild_CreateWoodenWall_1)"
+            "description": "Pattern: MultiStageBuild_{Type}_{Action}\n(e.g., MultiStageBuild_CreateWoodenWall_1, MultiStageBuild_UpgradeMetalWall_1To2)"
         },
         "^\\$": {
             "type": "string"

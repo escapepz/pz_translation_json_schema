@@ -4,9 +4,9 @@
     "description": "Dynamic radio with AEBS_{PropertyName} pattern",
     "type": "object",
     "patternProperties": {
-        "^AEBS_[A-Za-z]+$": {
+        "^AEBS_[A-Za-z0-9_]+$": {
             "type": "string",
-            "description": "Pattern: AEBS_{PropertyName} or generic (e.g., AEBS_Intro, AEBS_temperature)"
+            "description": "Pattern: AEBS_{PropertyName}\n(e.g., AEBS_Intro, AEBS_Power_1)"
         },
         "^\\$": {
             "type": "string"

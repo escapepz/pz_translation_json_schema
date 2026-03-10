@@ -4,9 +4,9 @@
     "description": "UI elements with UI_{context}_{keyname} pattern",
     "type": "object",
     "patternProperties": {
-        "^UI_[a-z_]+$": {
+        "^[A-Za-z0-9_\\s/\\(\\)\\-]+$": {
             "type": "string",
-            "description": "Pattern: UI_{context}_{keyname} (e.g., UI_mainscreen_survival, UI_optionscreen_fullscreen)"
+            "description": "Pattern: UI_{Key} or non-prefixed keys\n(e.g., UI_mainscreen_survival, UI_optionscreen_binding_Attack/Click)"
         },
         "^\\$": {
             "type": "string"

@@ -6,7 +6,7 @@
     "patternProperties": {
         "^[A-Za-z0-9_!\\s]+$": {
             "type": "string",
-            "description": "Pattern: {FurnitureNameSnakeCase} (e.g., 50s_Barstool, Aaaaah!_Painting)"
+            "description": "Pattern: {FurnitureNameSnakeCase}\n(e.g., 50s_Barstool, Aaaaah!_Painting)"
         },
         "^\\$": {
             "type": "string"

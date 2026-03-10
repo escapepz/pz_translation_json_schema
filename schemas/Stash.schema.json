@@ -6,7 +6,7 @@
     "patternProperties": {
         "^Stash_[A-Za-z0-9_]+$": {
             "type": "string",
-            "description": "Pattern: Stash_{LocationCode}_{ItemKey} (e.g., Stash_LVMap1_Text1, Stash_AnnotedMap)"
+            "description": "Pattern: Stash_{LocationCode}_{ItemKey}\n(e.g., Stash_LVMap1_Text1, Stash_AnnotedMap)"
         },
         "^\\$": {
             "type": "string"

@@ -4,9 +4,9 @@
     "description": "Tooltips with Tooltip_{category}_{key} pattern",
     "type": "object",
     "patternProperties": {
-        "^Tooltip_[a-z_]+$": {
+        "^Tooltip_[A-Za-z0-9_]+$": {
             "type": "string",
-            "description": "Pattern: Tooltip_{category}_{key} (e.g., Tooltip_food_Bowl, Tooltip_item_Weight)"
+            "description": "Pattern: Tooltip_{category}_{key}\n(e.g., Tooltip_food_Bowl, Tooltip_AddPaddingToAll)"
         },
         "^\\$": {
             "type": "string"

@@ -6,7 +6,7 @@
     "patternProperties": {
         "^[A-Za-z_][A-Za-z0-9_]*$": {
             "type": "string",
-            "description": "Location-specific POI names (e.g., Generic)"
+            "description": "Location-specific POI names\n(e.g., Generic)"
         },
         "^\\$": {
             "type": "string"

@@ -6,7 +6,7 @@
     "patternProperties": {
         "^[A-Za-z_][A-Za-z0-9_]*\\.[A-Za-z0-9_]+$": {
             "type": "string",
-            "description": "Pattern: Base.{ItemCodeName} (e.g., Base.CannedBologneseOpen, Base.Teabag2)"
+            "description": "Pattern: Base.{ItemCodeName}\n(e.g., Base.CannedBologneseOpen, Base.Teabag2)"
         },
         "^\\$": {
             "type": "string"

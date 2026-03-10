@@ -6,7 +6,7 @@
     "patternProperties": {
         "^MapLabel_[A-Za-z]+$": {
             "type": "string",
-            "description": "Pattern: MapLabel_{LocationName} (e.g., MapLabel_Brandenburg, MapLabel_Riverside)"
+            "description": "Pattern: MapLabel_{LocationName}\n(e.g., MapLabel_Brandenburg, MapLabel_Riverside)"
         },
         "^\\$": {
             "type": "string"

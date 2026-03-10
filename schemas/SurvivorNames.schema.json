@@ -4,9 +4,9 @@
     "description": "Survivor surnames with SurvivorSurname_{LastName} pattern",
     "type": "object",
     "patternProperties": {
-        "^SurvivorSurname_[A-Za-z]+$": {
+        "^Survivor(Name|Surname)_[A-Za-z0-9_\\s\\.'-]+$": {
             "type": "string",
-            "description": "Pattern: SurvivorSurname_{LastName} (e.g., SurvivorSurname_Simpson, SurvivorSurname_Smith)"
+            "description": "Pattern: SurvivorName/Surname_{Name}\n(e.g., SurvivorName_Aaron, SurvivorSurname_Simpson)"
         },
         "^\\$": {
             "type": "string"

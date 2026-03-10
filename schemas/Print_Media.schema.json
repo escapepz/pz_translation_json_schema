@@ -4,9 +4,9 @@
     "description": "Print media with Print_Media_{MediaName}_{property} pattern",
     "type": "object",
     "patternProperties": {
-        "^Print_Media_[A-Za-z0-9_]+$": {
+        "^[A-Za-z0-9_]+$": {
             "type": "string",
-            "description": "Pattern: Print_Media_{MediaName}_{property} (e.g., Print_Media_KnoxKnews_July1_title)"
+            "description": "Pattern: Print_Media_{MediaName}_{property} or other print media keys\n(e.g., Print_Media_KnoxKnews_July1_title, maptext)"
         },
         "^\\$": {
             "type": "string"

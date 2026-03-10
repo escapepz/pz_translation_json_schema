@@ -1,0 +1,214 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "**/Translate/*/Attributes.json"
+            ],
+            "url": "./schemas/Attributes.schema.json",
+            "name": "PZ Attributes Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/BodyParts.json"
+            ],
+            "url": "./schemas/BodyParts.schema.json",
+            "name": "PZ BodyParts Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Challenge.json"
+            ],
+            "url": "./schemas/Challenge.schema.json",
+            "name": "PZ Challenge Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/ContextMenu.json"
+            ],
+            "url": "./schemas/ContextMenu.schema.json",
+            "name": "PZ ContextMenu Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/DynamicRadio.json"
+            ],
+            "url": "./schemas/DynamicRadio.schema.json",
+            "name": "PZ DynamicRadio Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Entity.json"
+            ],
+            "url": "./schemas/Entity.schema.json",
+            "name": "PZ Entity Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/EvolvedRecipeName.json"
+            ],
+            "url": "./schemas/EvolvedRecipeName.schema.json",
+            "name": "PZ EvolvedRecipeName Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Farming.json"
+            ],
+            "url": "./schemas/Farming.schema.json",
+            "name": "PZ Farming Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Fluids.json"
+            ],
+            "url": "./schemas/Fluids.schema.json",
+            "name": "PZ Fluids Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/GameSound.json"
+            ],
+            "url": "./schemas/GameSound.schema.json",
+            "name": "PZ GameSound Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/IG_UI.json"
+            ],
+            "url": "./schemas/IG_UI.schema.json",
+            "name": "PZ IG_UI Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/ItemName.json"
+            ],
+            "url": "./schemas/ItemName.schema.json",
+            "name": "PZ ItemName Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Location_Generic.json"
+            ],
+            "url": "./schemas/Location_Generic.schema.json",
+            "name": "PZ Location_Generic Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/MakeUp.json"
+            ],
+            "url": "./schemas/MakeUp.schema.json",
+            "name": "PZ MakeUp Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/MapLabel.json"
+            ],
+            "url": "./schemas/MapLabel.schema.json",
+            "name": "PZ MapLabel Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Moodles.json"
+            ],
+            "url": "./schemas/Moodles.schema.json",
+            "name": "PZ Moodles Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Moveables.json"
+            ],
+            "url": "./schemas/Moveables.schema.json",
+            "name": "PZ Moveables Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/MultiStageBuild.json"
+            ],
+            "url": "./schemas/MultiStageBuild.schema.json",
+            "name": "PZ MultiStageBuild Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Print_Media.json"
+            ],
+            "url": "./schemas/Print_Media.schema.json",
+            "name": "PZ Print_Media Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Print_Text.json"
+            ],
+            "url": "./schemas/Print_Text.schema.json",
+            "name": "PZ Print_Text Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/RadioData.json"
+            ],
+            "url": "./schemas/RadioData.schema.json",
+            "name": "PZ RadioData Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/RecipeGroups.json"
+            ],
+            "url": "./schemas/RecipeGroups.schema.json",
+            "name": "PZ RecipeGroups Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Recipes.json"
+            ],
+            "url": "./schemas/Recipes.schema.json",
+            "name": "PZ Recipes Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Recorded_Media.json"
+            ],
+            "url": "./schemas/Recorded_Media.schema.json",
+            "name": "PZ Recorded_Media Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Sandbox.json"
+            ],
+            "url": "./schemas/Sandbox.schema.json",
+            "name": "PZ Sandbox Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Stash.json"
+            ],
+            "url": "./schemas/Stash.schema.json",
+            "name": "PZ Stash Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/SurvivalGuide.json"
+            ],
+            "url": "./schemas/SurvivalGuide.schema.json",
+            "name": "PZ SurvivalGuide Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/SurvivorNames.json"
+            ],
+            "url": "./schemas/SurvivorNames.schema.json",
+            "name": "PZ SurvivorNames Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/Tooltip.json"
+            ],
+            "url": "./schemas/Tooltip.schema.json",
+            "name": "PZ Tooltip Schema"
+        },
+        {
+            "fileMatch": [
+                "**/Translate/*/UI.json"
+            ],
+            "url": "./schemas/UI.schema.json",
+            "name": "PZ UI Schema"
+        }
+    ]
+}

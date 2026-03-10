@@ -4,9 +4,9 @@
     "description": "Crops with Farming_{CropName} pattern",
     "type": "object",
     "patternProperties": {
-        "^Farming_[A-Za-z]+$": {
+        "^Farming_[A-Za-z0-9_\\s-]+$": {
             "type": "string",
-            "description": "Pattern: Farming_{CropName} (e.g., Farming_Carrots, Farming_Tomato)"
+            "description": "Pattern: Farming_{Key}\n(e.g., Farming_Carrots, Farming_Seed-bearing)"
         },
         "^\\$": {
             "type": "string"

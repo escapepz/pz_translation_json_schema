@@ -4,9 +4,9 @@
     "description": "Context menu actions with ContextMenu_{ActionName} pattern",
     "type": "object",
     "patternProperties": {
-        "^ContextMenu_[A-Za-z]+$": {
+        "^[A-Za-z0-9_\\s/]+$": {
             "type": "string",
-            "description": "Pattern: ContextMenu_{ActionName} (e.g., ContextMenu_Destroy, ContextMenu_Sleep)"
+            "description": "Pattern: ContextMenu_{ActionName} or other context menu keys\n(e.g., ContextMenu_Destroy, ContextMenu_EvolvedRecipe_Roasted Vegetables, Puddle)"
         },
         "^\\$": {
             "type": "string"

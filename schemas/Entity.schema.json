@@ -6,7 +6,7 @@
     "patternProperties": {
         "^EC_[A-Za-z_]+$": {
             "type": "string",
-            "description": "Pattern: EC_{PropertyName} (e.g., EC_Entity_DisplayName_Default, EC_Energy_Electric)"
+            "description": "Pattern: EC_{PropertyName}\n(e.g., EC_Entity_DisplayName_Default, EC_Energy_Electric)"
         },
         "^\\$": {
             "type": "string"

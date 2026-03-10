@@ -4,9 +4,9 @@
     "description": "Recipe names in PascalCase",
     "type": "object",
     "patternProperties": {
-        "^[A-Z][a-zA-Z0-9]*$": {
+        "^[A-Za-z0-9_\\(\\): -]+$": {
             "type": "string",
-            "description": "Pattern: {RecipeNameInPascalCase} (e.g., MakeBiscuits, AttachBreadKnifeToSpear)"
+            "description": "Pattern: {RecipeName}\n(e.g., MakeBiscuits, base:barley growing season)"
         },
         "^\\$": {
             "type": "string"

@@ -6,7 +6,7 @@
     "patternProperties": {
         "^RecipeGroup_[A-Za-z]+$": {
             "type": "string",
-            "description": "Pattern: RecipeGroup_{GroupName} (e.g., RecipeGroup_OpenBox)"
+            "description": "Pattern: RecipeGroup_{GroupName}\n(e.g., RecipeGroup_OpenBox)"
         },
         "^\\$": {
             "type": "string"

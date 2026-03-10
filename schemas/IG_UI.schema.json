@@ -4,9 +4,9 @@
     "description": "In-game UI with IGUI_{panel}_{property} pattern",
     "type": "object",
     "patternProperties": {
-        "^IGUI_[a-z_]+$": {
+        "^[A-Za-z0-9_\\s:\\./'!-]+$": {
             "type": "string",
-            "description": "Pattern: IGUI_{panel}_{property} (e.g., IGUI_invpanel_Type, IGUI_invpage_Loot_all)"
+            "description": "Pattern: IGUI_{Key} or non-prefixed keys\n(e.g., IGUI_invpanel_Type, IGUI_Photo_aMan'sFace)"
         },
         "^\\$": {
             "type": "string"

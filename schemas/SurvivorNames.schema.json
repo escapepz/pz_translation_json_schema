@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "SurvivorNames.json Schema",
+    "description": "Survivor surnames with SurvivorSurname_{LastName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^SurvivorSurname_[A-Za-z]+$": {
+            "type": "string",
+            "description": "Pattern: SurvivorSurname_{LastName} (e.g., SurvivorSurname_Simpson, SurvivorSurname_Smith)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ContextMenu.json Schema",
+    "description": "Context menu actions with ContextMenu_{ActionName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^ContextMenu_[A-Za-z]+$": {
+            "type": "string",
+            "description": "Pattern: ContextMenu_{ActionName} (e.g., ContextMenu_Destroy, ContextMenu_Sleep)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

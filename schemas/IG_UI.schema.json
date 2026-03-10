@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "IG_UI.json Schema",
+    "description": "In-game UI with IGUI_{panel}_{property} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^IGUI_[a-z_]+$": {
+            "type": "string",
+            "description": "Pattern: IGUI_{panel}_{property} (e.g., IGUI_invpanel_Type, IGUI_invpage_Loot_all)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

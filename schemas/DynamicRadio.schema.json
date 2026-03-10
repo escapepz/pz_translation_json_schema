@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "DynamicRadio.json Schema",
+    "description": "Dynamic radio with AEBS_{PropertyName} pattern",
+    "type": "object",
+    "patternProperties": {
+        "^AEBS_[A-Za-z]+$": {
+            "type": "string",
+            "description": "Pattern: AEBS_{PropertyName} or generic (e.g., AEBS_Intro, AEBS_temperature)"
+        },
+        "^\\$": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

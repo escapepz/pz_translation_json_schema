@@ -1,0 +1,5 @@
+{
+    "$schema": "../schemas/ItemName.schema.json",
+    "Base.Apple": "Apple",
+    "Base.Hammer": "Hammer"
+}

@@ -42,12 +42,12 @@ For instance, you can map specific translation files to their schemas:
     "json.schemas": [
         {
             "fileMatch": ["**/Translate/*/ItemName.json"],
-            "url": "./pz_translation_json_schema/schemas/ItemName.schema.json",
+            "url": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.15.0/schemas/ItemName.schema.json",
             "name": "PZ ItemName Schema"
         },
         {
             "fileMatch": ["**/Translate/*/UI.json"],
-            "url": "./pz_translation_json_schema/schemas/UI.schema.json",
+            "url": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.15.0/schemas/UI.schema.json",
             "name": "PZ UI Schema"
         }
         // ... add the rest as needed

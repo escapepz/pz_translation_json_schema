@@ -33,8 +33,8 @@ Complete consolidated reference for all 35 translation JSON files with exact key
 | `Challenge_` | Challenge.json | `Challenge_[A-Za-z0-9\s]+_[a-z]+` | `Challenge_YouHaveOneDay_name` |
 | `EC_` | Entity.json | `EC_[A-Za-z_]+` | `EC_Entity_DisplayName_Default` |
 | `MakeUpCategory_` / `MakeUpType_` | MakeUp.json | `MakeUp(Category\|Type)_[A-Za-z]+` | `MakeUpCategory_Eyes` |
+| `RM_` | Recorded_Media.json | `RM_[A-Za-z0-9_]+` or UUID | `RM_broadcast` |
 | PascalCase | Recipes.json | `[A-Z][a-zA-Z0-9]*` | `MakeBiscuits` |
-| `RM_` | Recorded_Media.json | `RM_[A-Za-z0-9_]+` | `RM_broadcast` |
 | Generic | Moveables.json, 5 Location files | `[A-Za-z_][A-Za-z0-9_]*` | `50s_Barstool` |
 
 ---
@@ -61,7 +61,7 @@ Complete consolidated reference for all 35 translation JSON files with exact key
 | Simple Prefix | 12 files | `Farming_`, `Fluid_`, `MapLabel_`, etc. |
 | Complex Prefix | RecipeGroups, MultiStageBuild, Moodles, Attributes | Compound patterns with structure |
 | Special | Recipes (PascalCase), BodyParts (UPPERCASE), RadioData (UUID) | Unique per file |
-| Generic | Moveables, Recorded_Media, 5 Location files | Flexible naming |
+| Generic | Moveables, 5 Location files, Recorded_Media | Flexible naming |
 
 ---
 

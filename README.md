@@ -16,6 +16,7 @@ A comprehensive set of JSON Schemas for validating, writing, and assisting in th
 ## Quick IDE Setup (VS Code)
 
 ### 1. Single File Validation
+
 Add the `$schema` property directly to a JSON file for quick local validation.
 
 File Path: `..\media\lua\shared\Translate\EN\ItemName.json`
@@ -27,9 +28,11 @@ File Path: `..\media\lua\shared\Translate\EN\ItemName.json`
     "Base.Hammer": "Hammer"
 }
 ```
+
 More schema? -> [schemas/](schemas/)
 
 ### 2. Project Based Validation
+
 Configure VS Code to automatically apply schemas to all matching files in your project without modifying the source files.
 
 For instance, you can map specific translation files to their schemas.
@@ -54,7 +57,7 @@ Update your `.vscode/settings.json` (or create the file and `.vscode` folder if 
 }
 ```
 
-*For more details on integrating with JetBrains products or validating via the CLI, refer to the [How to Use](how_to_use.md) guide.*
+_For more details on integrating with JetBrains products or validating via the CLI, refer to the [How to Use](.github/How_To_Use.md) guide._
 
 ## Schema Architecture
 
@@ -69,14 +72,14 @@ The `schemas/` directory contains 30 distinct modular `.schema.json` definitions
 
 This project contains detailed documentation to help you understand and utilize the structure:
 
-- 📖 **[How to Use](how_to_use.md)**: A complete guide covering IDE integration, command-line validation (using tools like `ajv` or Python), keys extraction, and various best practices.
-- 🗂️ **[Categories](categories.md)**: Complete breakdown and categorization of Project Zomboid translation files. Details what each file handles and provides key pattern explanations.
-- 🔍 **[Patterns Reference](patterns_reference.md)**: A concise quick-lookup table for all translation key prefixes.
-- 📊 **[Key Patterns Report](key_patterns_report.md)**: An analytical mapping of key constraints for all translation files.
+- 📖 **[How to Use](.github/How_To_Use.md)**: A complete guide covering IDE integration, command-line validation (using tools like `ajv` or Python), keys extraction, and various best practices.
+- 🗂️ **[Categories](.github/Categories.md)**: Complete breakdown and categorization of Project Zomboid translation files. Details what each file handles and provides key pattern explanations.
+- 🔍 **[Patterns Reference](.github/Patterns_Reference.md)**: A concise quick-lookup table for all translation key prefixes.
+- 📊 **[Key Patterns Report](.github/Key_Patterns_Report.md)**: An analytical mapping of key constraints for all translation files.
 
 ## Formatting & Contributing
 
-This project relies on `prettier` for JSON formatting. 
+This project relies on `prettier` for JSON formatting.
 When making modifications or adding new descriptions to internal schemas, run the formatter to ensure consistency across files:
 
 ```bash

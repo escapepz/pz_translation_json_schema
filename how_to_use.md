@@ -603,4 +603,4 @@ chmod +x validate-all.sh
 - **JSON Schema Documentation:** https://json-schema.org/
 - **AJV Validator:** https://ajv.js.org/
 - **JQ Manual:** https://stedolan.github.io/jq/
-- **Project Zomboid Forums:** https://www.projectzomboid.com/
+- **Project Zomboid Forums:** https://theindiestone.com/forums/

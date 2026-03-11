@@ -19,12 +19,12 @@ Total files: **35 JSON files**
 | [ItemName.json](media/lua/shared/Translate/EN/ItemName.json) | `{ModuleName}.{ItemCodeName}` | `Base.Apple`, `Base.3030Box`, `CustomMod.MyItem` |
 
 **Sample Keys:**
-- Weapons: `Base.AssaultRifle`, `Base.Crowbar`
 - Ammunition: `Base.9mmClip`, `Base.556Bullets`
-- Food: `Base.Apple`, `Base.Bacon`
 - Clothing: `Base.Apron_Black`, `Base.Corset`
-- Tools: `Base.Hammer`, `Base.Wrench`
 - Containers: `Base.Bag_Schoolbag`, `Base.Cooler`
+- Food: `Base.Apple`, `Base.Bacon`
+- Tools: `Base.Hammer`, `Base.Wrench`
+- Weapons: `Base.AssaultRifle`, `Base.Crowbar`
 
 **Size:** ~1000+ entries
 
@@ -36,10 +36,10 @@ Total files: **35 JSON files**
 
 | File | Key Pattern | Example Keys |
 |------|-------------|--------------|
-| [Recipes.json](media/lua/shared/Translate/EN/Recipes.json) | `{RecipeNameInPascalCase}` | `MakeBiscuits`, `AttachBreadKnifeToSpear`, `MakePizza` |
-| [RecipeGroups.json](media/lua/shared/Translate/EN/RecipeGroups.json) | `RecipeGroup_{GroupName}` | `RecipeGroup_OpenBox`, `RecipeGroup_Cooking` |
 | [EvolvedRecipeName.json](media/lua/shared/Translate/EN/EvolvedRecipeName.json) | `{ModuleName}.{ItemCodeName}` | `Base.CannedBologneseOpen`, `CustomMod.SpecialRecipe` |
 | [MultiStageBuild.json](media/lua/shared/Translate/EN/MultiStageBuild.json) | `MultiStageBuild_{Type}_{Action}` | `MultiStageBuild_CreateWoodenWall_1` |
+| [RecipeGroups.json](media/lua/shared/Translate/EN/RecipeGroups.json) | `RecipeGroup_{GroupName}` | `RecipeGroup_OpenBox`, `RecipeGroup_Cooking` |
+| [Recipes.json](media/lua/shared/Translate/EN/Recipes.json) | `{RecipeNameInPascalCase}` | `MakeBiscuits`, `AttachBreadKnifeToSpear`, `MakePizza` |
 
 **Sample Keys from Recipes.json:**
 - Cooking: `MakeBiscuits`, `MakePancake`, `MakePizza`
@@ -58,17 +58,17 @@ Total files: **35 JSON files**
 
 | File | Key Pattern | Example Keys |
 |------|-------------|--------------|
-| [UI.json](media/lua/shared/Translate/EN/UI.json) | `UI_{context}_{keyname}` | `UI_mainscreen_laststand`, `UI_optionscreen_fullscreen` |
+| [ContextMenu.json](media/lua/shared/Translate/EN/ContextMenu.json) | `ContextMenu_{ActionName}` | `ContextMenu_Destroy`, `ContextMenu_Sleep` |
 | [IG_UI.json](media/lua/shared/Translate/EN/IG_UI.json) | `IGUI_{panel}_{property}` | `IGUI_invpanel_Type`, `IGUI_invpage_Loot_all` |
 | [Tooltip.json](media/lua/shared/Translate/EN/Tooltip.json) | `Tooltip_{category}_{key}` | `Tooltip_food_Bowl`, `Tooltip_item_Weight` |
-| [ContextMenu.json](media/lua/shared/Translate/EN/ContextMenu.json) | `ContextMenu_{ActionName}` | `ContextMenu_Destroy`, `ContextMenu_Sleep` |
+| [UI.json](media/lua/shared/Translate/EN/UI.json) | `UI_{context}_{keyname}` | `UI_mainscreen_laststand`, `UI_optionscreen_fullscreen` |
 
 **Sample Keys from UI.json:**
+- Game Modes: `UI_soloscreen_sandbox`, `UI_coopscreen_title`
 - Main Menu: `UI_mainscreen_survival`, `UI_mainscreen_sandbox`
 - Options: `UI_optionscreen_fullscreen`, `UI_optionscreen_volume`
-- Game Modes: `UI_soloscreen_sandbox`, `UI_coopscreen_title`
-- Traits: `UI_trait_FastHealer`, `UI_trait_NightVision`
 - Professions: `UI_prof_Carpenter`, `UI_prof_Doctor`
+- Traits: `UI_trait_FastHealer`, `UI_trait_NightVision`
 
 **Size:** ~1000+ entries
 
@@ -80,10 +80,10 @@ Total files: **35 JSON files**
 
 | File | Key Pattern | Example Keys |
 |------|-------------|--------------|
-| [Attributes.json](media/lua/shared/Translate/EN/Attributes.json) | `Attributes_Type_{AttributeName}` | `Attributes_Type_Quality`, `Attributes_Type_Durability` |
+| [Attributes.json](media/lua/shared/Translate/EN/Attributes.json) | `Attributes_Type_{AttributeName}` | `Attributes_Type_Durability`, `Attributes_Type_Quality` |
 | [BodyParts.json](media/lua/shared/Translate/EN/BodyParts.json) | `BODYPART_{PARTNAME}` | `BODYPART_HEAD`, `BODYPART_LEFT_UPPER_ARM` |
 | [Farming.json](media/lua/shared/Translate/EN/Farming.json) | `Farming_{CropName}` | `Farming_Carrots`, `Farming_Tomato` |
-| [Fluids.json](media/lua/shared/Translate/EN/Fluids.json) | `Fluid_{ActionOrProperty}` | `Fluid_Transfer`, `Fluid_Capacity` |
+| [Fluids.json](media/lua/shared/Translate/EN/Fluids.json) | `Fluid_{ActionOrProperty}` | `Fluid_Capacity`, `Fluid_Transfer` |
 | [Moodles.json](media/lua/shared/Translate/EN/Moodles.json) | `Moodles_{Type}_lvl{Level}` | `Moodles_Endurance_lvl1`, `Moodles_Stress_lvl4` |
 
 **Sample Keys:**
@@ -129,19 +129,19 @@ Total files: **35 JSON files**
 
 | File | Key Pattern | Example Keys |
 |------|-------------|--------------|
-| [RadioData.json](media/lua/shared/Translate/EN/RadioData.json) | `RD_{UUID}` | `RD_b0ee632b-789e-4e4f-a2b0-b09374856a62` |
 | [DynamicRadio.json](media/lua/shared/Translate/EN/DynamicRadio.json) | `AEBS_{PropertyName}` or Generic | `AEBS_Intro`, `AEBS_temperature` |
 | [GameSound.json](media/lua/shared/Translate/EN/GameSound.json) | `GameSound_{SoundName}` | `GameSound_AlarmClockRingingLoop`, `GameSound_BatHit` |
-| [Recorded_Media.json](media/lua/shared/Translate/EN/Recorded_Media.json) | `RM_{PropertyName}` or `RM_{UUID}` | `RM_broadcast`, `RM_6fc100d7-c673-4fed-89f7-ab314f965ee4` |
-| [Print_Text.json](media/lua/shared/Translate/EN/Print_Text.json) | `Print_Text_{MediaName}_{property}` | `Print_Text_KnoxKnews_July1_title` |
 | [Print_Media.json](media/lua/shared/Translate/EN/Print_Media.json) | `Print_Media_{MediaName}_{property}` | `Print_Media_KnoxKnews_July1_title` |
+| [Print_Text.json](media/lua/shared/Translate/EN/Print_Text.json) | `Print_Text_{MediaName}_{property}` | `Print_Text_KnoxKnews_July1_title` |
+| [RadioData.json](media/lua/shared/Translate/EN/RadioData.json) | `RD_{UUID}` | `RD_b0ee632b-789e-4e4f-a2b0-b09374856a62` |
+| [Recorded_Media.json](media/lua/shared/Translate/EN/Recorded_Media.json) | `RM_{PropertyName}` or `RM_{UUID}` | `RM_broadcast`, `RM_6fc100d7-c673-4fed-89f7-ab314f965ee4` |
 
 **Sample Content:**
-- Radio broadcasts and announcements
-- Music tracks and jingles
-- Sound effect labels
 - Book titles and content
 - Magazine articles
+- Music tracks and jingles
+- Radio broadcasts and announcements
+- Sound effect labels
 
 **Size:** ~100-500 entries
 
@@ -153,10 +153,10 @@ Total files: **35 JSON files**
 
 | File | Key Pattern | Example Keys |
 |------|-------------|--------------|
+| [Challenge.json](media/lua/shared/Translate/EN/Challenge.json) | `Challenge_{ScenarioId}_{property}` | `Challenge_YouHaveOneDay_name`, `Challenge_Opening Hours_desc` |
+| [Sandbox.json](media/lua/shared/Translate/EN/Sandbox.json) | `Sandbox_{OptionName}` | `Sandbox_PopulationOptions`, `Sandbox_ZombieCount` |
 | [SurvivalGuide.json](media/lua/shared/Translate/EN/SurvivalGuide.json) | `SurvivalGuide_entrie{num}{property}` | `SurvivalGuide_entrie1title`, `SurvivalGuide_entrie2txt` |
 | [SurvivorNames.json](media/lua/shared/Translate/EN/SurvivorNames.json) | `SurvivorSurname_{LastName}` | `SurvivorSurname_Simpson`, `SurvivorSurname_Smith` |
-| [Sandbox.json](media/lua/shared/Translate/EN/Sandbox.json) | `Sandbox_{OptionName}` | `Sandbox_PopulationOptions`, `Sandbox_ZombieCount` |
-| [Challenge.json](media/lua/shared/Translate/EN/Challenge.json) | `Challenge_{ScenarioId}_{property}` | `Challenge_YouHaveOneDay_name`, `Challenge_Opening Hours_desc` |
 
 **Size:** Variable (50-1000+ entries)
 
@@ -241,54 +241,58 @@ IGUI_{panel}_{property}
 
 ## Complete File Mapping
 
-### All 35 Files by Pattern Type
+All 35 Files by Pattern Type
+
+### 1. Structured
 
 **Module Prefix (`{ModuleName}.`):**
-- ItemName.json
 - EvolvedRecipeName.json
+- ItemName.json
 (Any registered module, not just Base)
 
-**UI Prefix (`UI_` or `IGUI_` or `Tooltip_`):**
-- UI.json
-- IG_UI.json
-- Tooltip.json
-
-**Map/Location Prefix:**
-- MapLabel.json
-- Stash.json
-- West Point, KY.json
-- Rosewood, KY.json
-- Riverside, KY.json
-- Muldraugh, KY.json
-- Echo Creek, KY.json
-
 **Prefixed Patterns (File-Specific):**
-- ContextMenu.json (`ContextMenu_`)
 - Attributes.json (`Attributes_Type_`)
 - BodyParts.json (`BODYPART_`)
+- Challenge.json (`Challenge_`)
+- ContextMenu.json (`ContextMenu_`)
+- DynamicRadio.json (`AEBS_` or generic)
+- Entity.json (`EC_`)
 - Farming.json (`Farming_`)
 - Fluids.json (`Fluid_`)
-- Moodles.json (`Moodles_`)
-- RecipeGroups.json (`RecipeGroup_`)
-- MultiStageBuild.json (`MultiStageBuild_`)
-- RadioData.json (`RD_`)
-- DynamicRadio.json (`AEBS_` or generic)
 - GameSound.json (`GameSound_`)
-- Recorded_Media.json (`RM_`)
+- MakeUp.json (`MakeUpCategory_` or `MakeUpType_`)
+- Moodles.json (`Moodles_`)
+- MultiStageBuild.json (`MultiStageBuild_`)
 - Print_Media.json (`Print_Media_`)
 - Print_Text.json (`Print_Text_`)
+- RadioData.json (`RD_`)
+- RecipeGroups.json (`RecipeGroup_`)
+- Recorded_Media.json (`RM_`)
+- Sandbox.json (`Sandbox_`)
 - SurvivalGuide.json (`SurvivalGuide_entrie`)
 - SurvivorNames.json (`SurvivorSurname_`)
-- Sandbox.json (`Sandbox_`)
-- Challenge.json (`Challenge_`)
-- Entity.json (`EC_`)
-- MakeUp.json (`MakeUpCategory_` or `MakeUpType_`)
+
+**UI Prefix (`UI_` or `IGUI_` or `Tooltip_`):**
+- IG_UI.json
+- Tooltip.json
+- UI.json
+
+### 2. Generic
+
+**Flexible/Generic:**
+- Moveables.json
 
 **PascalCase (No Prefix):**
 - Recipes.json
 
-**Flexible/Generic:**
-- Moveables.json
+**Map/Location Prefix:**
+- Echo Creek, KY.json
+- MapLabel.json
+- Muldraugh, KY.json
+- Riverside, KY.json
+- Rosewood, KY.json
+- Stash.json
+- West Point, KY.json
 
 ---
 

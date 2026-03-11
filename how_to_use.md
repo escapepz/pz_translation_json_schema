@@ -101,34 +101,54 @@ except ValidationError as e:
 
 ---
 
-## IDE Integration
+## IDE Integration (VS Code)
 
-### VS Code Setup
+### 1. Single File Validation
+Add the `$schema` property directly to a JSON file for quick local validation.
 
-**Step 1:** Open `.vscode/settings.json` (create if doesn't exist)
+File Path: `..\media\lua\shared\Translate\EN\ItemName.json`
 
-**Step 2:** Add schema mapping:
+```json
+{
+    "$schema": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.15.0/schemas/ItemName.schema.json",
+    "Base.Apple": "Apple",
+    "Base.Hammer": "Hammer"
+}
+```
+More schema? -> [schemas/](schemas/)
+
+### 2. Project Based Validation
+Configure VS Code to automatically apply schemas to all matching files in your project without modifying the source files. 
+
+For instance, you can map specific translation files to their schemas.
+
+Update your `.vscode/settings.json` (or create the file and `.vscode` folder if they don't exist):
 
 ```json
 {
     "json.schemas": [
         {
-            "fileMatch": ["media/lua/shared/Translate/EN/ItemName.json"],
-            "url": "./schemas/ItemName.schema.json",
-            "name": "Project Zomboid Translation Schema for ItemName"
+            "fileMatch": ["**/Translate/*/ItemName.json"],
+            "url": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.15.0/schemas/ItemName.schema.json",
+            "name": "PZ ItemName Schema"
+        },
+        {
+            "fileMatch": ["**/Translate/*/UI.json"],
+            "url": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.15.0/schemas/UI.schema.json",
+            "name": "PZ UI Schema"
         }
+        // ... add the rest as needed
     ]
 }
 ```
 
-**Step 3:** Restart VS Code
-
-**Benefits:**
+### Benefits
 
 - Auto-completion for keys
 - Real-time validation
 - Hover tooltips showing key patterns
 - Error highlighting
+
 
 ### Other IDEs
 

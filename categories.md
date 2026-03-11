@@ -132,7 +132,7 @@ Total files: **35 JSON files**
 | [RadioData.json](media/lua/shared/Translate/EN/RadioData.json) | `RD_{UUID}` | `RD_b0ee632b-789e-4e4f-a2b0-b09374856a62` |
 | [DynamicRadio.json](media/lua/shared/Translate/EN/DynamicRadio.json) | `AEBS_{PropertyName}` or Generic | `AEBS_Intro`, `AEBS_temperature` |
 | [GameSound.json](media/lua/shared/Translate/EN/GameSound.json) | `GameSound_{SoundName}` | `GameSound_AlarmClockRingingLoop`, `GameSound_BatHit` |
-| [Recorded_Media.json](media/lua/shared/Translate/EN/Recorded_Media.json) | `RM_{PropertyName}` | `RM_broadcast`, `RM_recording` |
+| [Recorded_Media.json](media/lua/shared/Translate/EN/Recorded_Media.json) | `RM_{PropertyName}` or `RM_{UUID}` | `RM_broadcast`, `RM_6fc100d7-c673-4fed-89f7-ab314f965ee4` |
 | [Print_Text.json](media/lua/shared/Translate/EN/Print_Text.json) | `Print_Text_{MediaName}_{property}` | `Print_Text_KnoxKnews_July1_title` |
 | [Print_Media.json](media/lua/shared/Translate/EN/Print_Media.json) | `Print_Media_{MediaName}_{property}` | `Print_Media_KnoxKnews_July1_title` |
 

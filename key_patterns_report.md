@@ -26,7 +26,7 @@ All 35 translation files analyzed with actual key patterns.
 | 18 | [RadioData.json](media/lua/shared/Translate/EN/RadioData.json) | `RD_{UUID}` | `RD_b0ee632b-789e-4e4f-a2b0-b09374856a62` |
 | 19 | [DynamicRadio.json](media/lua/shared/Translate/EN/DynamicRadio.json) | `AEBS_{PropertyName}` or generic | `AEBS_Intro`, `AEBS_temperature` |
 | 20 | [GameSound.json](media/lua/shared/Translate/EN/GameSound.json) | `GameSound_{SoundName}` | `GameSound_AlarmClockRingingLoop`, `GameSound_BatHit` |
-| 21 | [Recorded_Media.json](media/lua/shared/Translate/EN/Recorded_Media.json) | Generic | (Not sampled) |
+| 21 | [Recorded_Media.json](media/lua/shared/Translate/EN/Recorded_Media.json) | `RM_{PropertyName}` or UUID | `RM_broadcast` |
 | 22 | [Print_Media.json](media/lua/shared/Translate/EN/Print_Media.json) | `Print_Media_{MediaName}_{property}` | `Print_Media_KnoxKnews_July1_title` |
 | 23 | [Print_Text.json](media/lua/shared/Translate/EN/Print_Text.json) | `Print_Text_{MediaName}_{property}` | `Print_Text_KnoxKnews_July1_title` |
 | 24 | [SurvivalGuide.json](media/lua/shared/Translate/EN/SurvivalGuide.json) | `SurvivalGuide_{entryNum}{property}` | `SurvivalGuide_entrie1title`, `SurvivalGuide_entrie2txt` |

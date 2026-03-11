@@ -13,29 +13,28 @@ A comprehensive set of JSON Schemas for validating, writing, and assisting in th
 - **Auto-completion & Tooltips:** Brings intelligence, descriptive pattern rules, and real-time error checking directly to IDEs.
 - **Pattern Enforcement:** Automatically enforces correct translation key patterns and valid naming conventions across different types of JSON structures (e.g., `Base.{ItemCodeName}`, `UI_{context}_{keyname}`).
 
-## Documentation
-
-This project contains detailed documentation to help you understand and utilize the structure:
-
-- 📖 **[How to Use](how_to_use.md)**: A complete guide covering IDE integration, command-line validation (using tools like `ajv` or Python), keys extraction, and various best practices.
-- 🗂️ **[Categories](categories.md)**: Complete breakdown and categorization of Project Zomboid translation files. Details what each file handles and provides key pattern explanations.
-- 🔍 **[Patterns Reference](patterns_reference.md)**: A concise quick-lookup table for all translation key prefixes.
-- 📊 **[Key Patterns Report](key_patterns_report.md)**: An analytical mapping of key constraints for all translation files.
-
-## Schema Architecture
-
-The `schemas/` directory contains 30 distinct modular `.schema.json` definitions mapping to the 35 translation files (with some common schemas shared):
-
-- `schemas/ItemName.schema.json`
-- `schemas/UI.schema.json`
-- `schemas/Recipes.schema.json`
-- `...` and many more.
-
 ## Quick IDE Setup (VS Code)
 
-To take full advantage of these JSON schemas in VS Code, configure your workspace mapping settings via `.vscode/settings.json`.
+### 1. Single File Validation
+Add the `$schema` property directly to a JSON file for quick local validation.
 
-For instance, you can map specific translation files to their schemas:
+File Path: `..\media\lua\shared\Translate\EN\ItemName.json`
+
+```json
+{
+    "$schema": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.15.0/schemas/ItemName.schema.json",
+    "Base.Apple": "Apple",
+    "Base.Hammer": "Hammer"
+}
+```
+More schema? -> [schemas/](schemas/)
+
+### 2. Project Based Validation
+Configure VS Code to automatically apply schemas to all matching files in your project without modifying the source files.
+
+For instance, you can map specific translation files to their schemas.
+
+Update your `.vscode/settings.json` (or create the file and `.vscode` folder if they don't exist):
 
 ```json
 {
@@ -56,6 +55,24 @@ For instance, you can map specific translation files to their schemas:
 ```
 
 *For more details on integrating with JetBrains products or validating via the CLI, refer to the [How to Use](how_to_use.md) guide.*
+
+## Schema Architecture
+
+The `schemas/` directory contains 30 distinct modular `.schema.json` definitions mapping to the 35 translation files (with some common schemas shared):
+
+- `schemas/ItemName.schema.json`
+- `schemas/UI.schema.json`
+- `schemas/Recipes.schema.json`
+- `...` and many more.
+
+## Documentation
+
+This project contains detailed documentation to help you understand and utilize the structure:
+
+- 📖 **[How to Use](how_to_use.md)**: A complete guide covering IDE integration, command-line validation (using tools like `ajv` or Python), keys extraction, and various best practices.
+- 🗂️ **[Categories](categories.md)**: Complete breakdown and categorization of Project Zomboid translation files. Details what each file handles and provides key pattern explanations.
+- 🔍 **[Patterns Reference](patterns_reference.md)**: A concise quick-lookup table for all translation key prefixes.
+- 📊 **[Key Patterns Report](key_patterns_report.md)**: An analytical mapping of key constraints for all translation files.
 
 ## Formatting & Contributing
 

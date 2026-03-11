@@ -24,8 +24,8 @@ Complete guide for using the Project Zomboid translation JSON schema.
 Three reference files:
 
 - `schemas/` - JSON Schema definitions directory
-- `categories.md` - File organization and key patterns
-- `how_to_use.md` - This guide
+- `Categories.md` - File organization and key patterns
+- `How_To_Use.md` - This guide
 
 ### Basic Structure
 
@@ -104,6 +104,7 @@ except ValidationError as e:
 ## IDE Integration (VS Code)
 
 ### 1. Single File Validation
+
 Add the `$schema` property directly to a JSON file for quick local validation.
 
 File Path: `..\media\lua\shared\Translate\EN\ItemName.json`
@@ -115,10 +116,12 @@ File Path: `..\media\lua\shared\Translate\EN\ItemName.json`
     "Base.Hammer": "Hammer"
 }
 ```
+
 More schema? -> [schemas/](schemas/)
 
 ### 2. Project Based Validation
-Configure VS Code to automatically apply schemas to all matching files in your project without modifying the source files. 
+
+Configure VS Code to automatically apply schemas to all matching files in your project without modifying the source files.
 
 For instance, you can map specific translation files to their schemas.
 
@@ -148,7 +151,6 @@ Update your `.vscode/settings.json` (or create the file and `.vscode` folder if 
 - Real-time validation
 - Hover tooltips showing key patterns
 - Error highlighting
-
 
 ### Other IDEs
 
@@ -271,7 +273,7 @@ media/lua/shared/Translate/EN/MyNewCategory.json
 ### Key Naming Convention Checklist
 
 - ✓ Keys are **unique** within the file
-- ✓ Keys follow **category pattern** (see categories.md)
+- ✓ Keys follow **category pattern** (see Categories.md)
 - ✓ Values are **non-empty strings**
 - ✓ No **special characters** except `_` and `.`
 - ✓ **PascalCase** for recipe names
@@ -387,7 +389,7 @@ jq empty media/lua/shared/Translate/EN/ItemName.json
 
 ### Issue: "Key doesn't match pattern"
 
-**Check against categories.md:**
+**Check against Categories.md:**
 
 - Items must start with `Base.`
 - UI keys must start with `UI_`
@@ -442,16 +444,19 @@ cat .vscode/settings.json
 **File: `validate-translations.js`**
 
 ```javascript
-const fs = require("fs");
-const path = require("path");
-const Ajv = require("ajv");
+const fs = require('fs');
+const path = require('path');
+const Ajv = require('ajv');
 
 const ajv = new Ajv();
-const dir = "media/lua/shared/Translate/EN";
-const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
+const dir = 'media/lua/shared/Translate/EN';
+const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
 
 files.forEach((file) => {
-    const schemaPath = path.join("schemas", file.replace(".json", ".schema.json"));
+    const schemaPath = path.join(
+        'schemas',
+        file.replace('.json', '.schema.json'),
+    );
     const schema = JSON.parse(fs.readFileSync(schemaPath));
     const validate = ajv.compile(schema);
 

@@ -16,11 +16,60 @@ This project contains detailed documentation to help you understand and utilize 
 - 🔍 **[Patterns Reference](Patterns_Reference.md)**: A concise quick-lookup table for all translation key prefixes.
 - 📊 **[Key Patterns Report](Key_Patterns_Report.md)**: An analytical mapping of key constraints for all translation files.
 
-## Formatting & Contributing
+## First-Time Setup Instructions
 
-This project relies on `prettier` for JSON formatting.
-When making modifications or adding new descriptions to internal schemas, run the formatter to ensure consistency across files:
+### Quick Setup
 
 ```bash
-prettier --write "schemas/**/*.json"
+# 1. Clone the repository
+git clone https://github.com/escapepz/pz_translation_json_schema.git
+cd pz_translation_json_schema
+
+# 2. Install Python (3.9+ recommended)
+# The verification script uses only standard library modules [1](#3-0)
+
+# 3. Install Node.js (for prettier formatting)
+# Download from https://nodejs.org or use version manager
+
+# 4. Install prettier globally
+npm install -g prettier
+
+# 5. (Optional) Install pre-commit for development
+pip install pre-commit
 ```
+
+### Verify Installation
+
+Test the setup by running the verification script:
+
+```bash
+python .agent/skills/translation_schema_management/scripts/verify_translation_keys.py
+```
+
+This uses default paths:
+
+- `--schema_dir schemas`
+- `--media_dir media/lua/shared/Translate/EN`
+
+### Optional Development Setup
+
+For ongoing development, set up pre-commit hooks:
+
+```bash
+pre-commit install
+```
+
+### Project Structure
+
+The project contains:
+
+- `schemas/` - 30 JSON schema files
+- `media/lua/shared/Translate/EN/` - 35 translation files
+- `.agent/skills/translation_schema_management/` - verification scripts
+- Documentation files (README.md, Categories.md, etc.)
+
+### Notes
+
+- No Python package manager files (requirements.txt, pyproject.toml) exist in the project
+- The verification script handles non-standard JSON (trailing commas) automatically
+- Prettier is used for consistent JSON formatting across schema files

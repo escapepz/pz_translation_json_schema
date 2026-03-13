@@ -38,10 +38,7 @@ jobs:
           npm install -g ajv-cli
 
       - name: Verify translation keys
-        run: |
-          python .agent/skills/translation_schema_management/scripts/verify_translation_keys.py \  
-            --schema_dir schemas \  
-            --media_dir media/lua/shared/Translate/EN
+        run: python .agent/skills/translation_schema_management/scripts/verify_translation_keys.py --schema_dir schemas --media_dir media/lua/shared/Translate/EN
 
       - name: Check JSON formatting
         run: |

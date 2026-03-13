@@ -10,5 +10,5 @@
     "Attributes_Type_WoodType": "Wood Type",
     "Attributes_Type_ContainsWood": "Contains Wood",
     "Attributes_Type_ContainsMetal": "Contains Metal",
-    "Attributes_ToosltipOverride_Durability": "Durability Uses"
+    "Attributes_TooltipOverride_Durability": "Durability Uses"
 }

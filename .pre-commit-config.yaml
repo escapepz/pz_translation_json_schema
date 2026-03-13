@@ -6,13 +6,13 @@ repos:
         entry: python .agent/skills/translation_schema_management/scripts/verify_translation_keys.py
         args:
           [--schema_dir, schemas, --media_dir, media/lua/shared/Translate/EN]
-        language: system
+        language: python
         pass_filenames: false
         files: '^schemas/.*\.schema\.json$|^\.agent/skills/translation_schema_management/.*\.py$'
 
       - id: prettier-json
         name: Prettier JSON
-        entry: prettier --write
+        entry: npx -y prettier --write
         language: node
         types: [json]
         files: '^schemas/.*\.json$'

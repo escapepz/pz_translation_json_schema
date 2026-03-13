@@ -89,5 +89,5 @@ This project relies on `prettier` for JSON formatting.
 When making modifications or adding new descriptions to internal schemas, run the formatter to ensure consistency across files:
 
 ```bash
-prettier --write "schemas/**/*.json"
+npx prettier --write "schemas/**/*.json"
 ```

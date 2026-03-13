@@ -2,7 +2,7 @@ name: Verify Translation Schemas
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
     paths:
       - "schemas/**"
       - ".agent/skills/translation_schema_management/**"
@@ -11,6 +11,7 @@ on:
     paths:
       - "schemas/**"
       - ".agent/skills/translation_schema_management/**"
+  workflow_dispatch:
 
 jobs:
   verify-schemas:
@@ -18,17 +19,17 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.2
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6.2.0
         with:
           python-version: "3.9"
 
       - name: Install Node.js (for prettier)
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6.3.0
         with:
-          node-version: "18"
+          node-version: ">=18"
 
       - name: Install dependencies
         run: |
@@ -37,10 +38,7 @@ jobs:
           npm install -g ajv-cli
 
       - name: Verify translation keys
-        run: |
-          python .agent/skills/translation_schema_management/scripts/verify_translation_keys.py \  
-            --schema_dir schemas \  
-            --media_dir media/lua/shared/Translate/EN
+        run: python .agent/skills/translation_schema_management/scripts/verify_translation_keys.py --schema_dir schemas --media_dir media/lua/shared/Translate/EN
 
       - name: Check JSON formatting
         run: |

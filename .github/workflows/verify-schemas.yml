@@ -2,7 +2,7 @@ name: Verify Translation Schemas
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
     paths:
       - "schemas/**"
       - ".agent/skills/translation_schema_management/**"
@@ -11,6 +11,7 @@ on:
     paths:
       - "schemas/**"
       - ".agent/skills/translation_schema_management/**"
+  workflow_dispatch:
 
 jobs:
   verify-schemas:

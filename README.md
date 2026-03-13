@@ -8,6 +8,8 @@
 
 A comprehensive set of JSON Schemas for validating, writing, and assisting in the creation of translation files for Project Zomboid (and its mods). This collection covers all translation files found in Project Zomboid's `media/lua/shared/Translate/` directory.
 
+📌 **Note:** This project provides the core schema definitions for [pz-translation-data](https://github.com/SirDoggyJvla/pz-translation-data). Updates here are manually integrated into the data repository to ensure standard compliance.
+
 ## Features
 
 - **Validation:** Ensures translation files have valid structures and prevents missing commas/braces, avoiding unexpected loading errors in-game.
@@ -15,6 +17,8 @@ A comprehensive set of JSON Schemas for validating, writing, and assisting in th
 - **Pattern Enforcement:** Automatically enforces correct translation key patterns and valid naming conventions across different types of JSON structures (e.g., `Base.{ItemCodeName}`, `UI_{context}_{keyname}`).
 
 ## Quick IDE Setup (VS Code)
+
+> 💡 **Tip:** If the schema fails to load, you may need to add GitHub to your **[Trusted Domains](.github/Troubleshooting_Trusted_Domains.md)**.
 
 ### 1. Single File Validation
 
@@ -74,6 +78,7 @@ The `schemas/` directory contains 30 distinct modular `.schema.json` definitions
 This project contains detailed documentation to help you understand and utilize the structure:
 
 - 📖 **[How to Use](.github/How_To_Use.md)**: A complete guide covering IDE integration, command-line validation (using tools like `ajv` or Python), keys extraction, and various best practices.
+- 🛠️ **[Trusted Domains](.github/Troubleshooting_Trusted_Domains.md)**: Troubleshooting guide for configuring `json.schemaDownload.trustedDomains` in VS Code.
 - 🗂️ **[Categories](.github/Categories.md)**: Complete breakdown and categorization of Project Zomboid translation files. Details what each file handles and provides key pattern explanations.
 - 🔍 **[Patterns Reference](.github/Patterns_Reference.md)**: A concise quick-lookup table for all translation key prefixes.
 - 📊 **[Key Patterns Report](.github/Key_Patterns_Report.md)**: An analytical mapping of key constraints for all translation files.

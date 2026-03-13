@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 name: Verify Translation Schemas  
   
 on:  
@@ -52,3 +53,59 @@ jobs:
           echo "Validating $schema"  
           ajv compile -s "$schema"  
         done
+=======
+name: Verify Translation Schemas
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - "schemas/**"
+      - ".agent/skills/translation_schema_management/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "schemas/**"
+      - ".agent/skills/translation_schema_management/**"
+
+jobs:
+  verify-schemas:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install Node.js (for prettier)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: |
+          pip install jsonschema  
+          npm install -g prettier  
+          npm install -g ajv-cli
+
+      - name: Verify translation keys
+        run: |
+          python .agent/skills/translation_schema_management/scripts/verify_translation_keys.py \  
+            --schema_dir schemas \  
+            --media_dir media/lua/shared/Translate/EN
+
+      - name: Check JSON formatting
+        run: |
+          prettier --check "schemas/**/*.json"
+
+      - name: Validate schemas with ajv
+        run: |
+          for schema in schemas/*.schema.json; do  
+            echo "Validating $schema"  
+            ajv compile -s "$schema"  
+          done
+>>>>>>> Stashed changes

@@ -31,10 +31,7 @@ cd pz_translation_json_schema
 # 3. Install Node.js (for prettier formatting)
 # Download from https://nodejs.org or use version manager
 
-# 4. Install prettier globally
-npm install -g prettier
-
-# 5. (Optional) Install pre-commit for development
+# 4. (Optional) Install pre-commit for development
 pip install pre-commit
 ```
 

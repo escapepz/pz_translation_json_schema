@@ -8,7 +8,7 @@
 
 A comprehensive set of JSON Schemas for validating, writing, and assisting in the creation of translation files for Project Zomboid (and its mods). This collection covers all translation files found in Project Zomboid's `media/lua/shared/Translate/` directory.
 
-📌 **Note:** This project provides the core schema definitions for [pz-translation-data](https://github.com/SirDoggyJvla/pz-translation-data). Updates here are manually integrated into the data repository to ensure standard compliance.
+~~📌 **Note:** This project provides the core schema definitions for [pz-translation-data](https://github.com/SirDoggyJvla/pz-translation-data). Updates here are manually integrated into the data repository to ensure standard compliance.~~ No, that guy is against using any AI to help with data. I don't want to waste time explaining it to strangers with a different mindset.
 
 ## Features
 

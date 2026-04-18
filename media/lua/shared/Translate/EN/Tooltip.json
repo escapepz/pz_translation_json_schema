@@ -354,7 +354,7 @@
     "Tooltip_CantCraftSecondLitLantern": "Already have a lit lantern.",
     "Tooltip_outoffuel": "Out of gas.",
     "Tooltip_craft_pressToRotate": "Press \"%1\" to rotate during construction",
-    "Tooltip_removeBurntVehicle": "Dismantling car wrecks with a welding mask and propane torch will destroy them, and provide metalworking materials. <LINE> Higher Metalwork skills will retrieve more usable salvage.",
+    "Tooltip_removeBurntVehicle": "Dismantling car wrecks with a welding mask and propane torch will destroy them, and provide metalworking materials. <LINE> Higher Welding skills will retrieve more usable salvage.",
     "Tooltip_lightFireNoStick": "Requires Tree Branch or Wooden Rod to light fire.",
     "Tooltip_lightFireNoFuel": "Requires already having Fuel to light fire.",
     "Tooltip_lightFireNoEndurance": "Requires not being Exhausted.",

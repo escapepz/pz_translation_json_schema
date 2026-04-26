@@ -681,6 +681,7 @@
     "ContextMenu_FuelPumpNoPower": "Fuel Pump has No Power",
     "ContextMenu_FuelPumpNoContainer": "No Container for Fuel",
     "ContextMenu_TooComplicated": "Skill level too low to read.",
+    "ContextMenu_TooSimple": "Skill level too high to benefit from reading.",
     "ContextMenu_TooDark": "Too dark to read.",
     "ContextMenu_RecentlyRead": "Recently read.",
     "ContextMenu_RecentlySeen": "Recently seen.",
@@ -844,5 +845,6 @@
     "ContextMenu_Trap": "Trap",
     "ContextMenu_Gardening": "Gardening",
     "ContextMenu_Fluid": "Fluid",
-    "ContextMenu_FullInventory": "Inventory is full"
+    "ContextMenu_FullInventory": "Inventory is full",
+    "ContextMenu_ChangeRadius": "Change Radius"
 }

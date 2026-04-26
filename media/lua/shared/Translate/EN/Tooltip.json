@@ -490,7 +490,7 @@
     "Tooltip_item_LargeBellows": "Needed to build an Advanced Forge or Furnace.",
     "Tooltip_item_BlacksmithAnvil": "Used to build a Simple or Advanced Forge. Useless on its own.",
     "Tooltip_item_StoneAnvil": "Used to build a Primitive Forge. Useless on its own.",
-    "Tooltip_item_OilPress": "Used to press oil on a Press. Can’t be used on its own.",
+    "Tooltip_item_OilPress": "Used to press oil on a Press. Can't be used on its own.",
     "Tooltip_item_SmallPunchSet": "Used in many armor recipes.",
     "Tooltip_item_Dogbane": "Can be twisted into Rope.",
     "Tooltip_item_Coke": "Fuel which burns at a high temperature. Used in Furnaces.",
@@ -601,5 +601,6 @@
     "Tooltip_NoRecipes_More": "This item has been flagged to be<br>unusable for any recipes.",
     "Tooltip_Unwanted": "Unwanted",
     "Tooltip_Unwanted_More": "All instances of this item have been<br>flagged as unwanted.",
-    "Tooltip_IsEmpty": "Cannot be activated when empty."
+    "Tooltip_IsEmpty": "Cannot be activated when empty.",
+    "Tooltip_DoorIsLocked": "Door Is Locked"
 }

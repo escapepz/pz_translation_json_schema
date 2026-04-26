@@ -61,7 +61,7 @@ pre-commit install
 The project contains:
 
 - `schemas/` - 30 JSON schema files
-- `media/lua/shared/Translate/EN/` - 35 translation files
+- `media/lua/shared/Translate/EN/` - 42 translation files
 - `.agent/skills/translation_schema_management/` - verification scripts
 - Documentation files (README.md, Categories.md, etc.)
 

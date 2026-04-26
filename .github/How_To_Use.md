@@ -111,7 +111,7 @@ File Path: `..\media\lua\shared\Translate\EN\ItemName.json`
 
 ```json
 {
-    "$schema": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.15.0/schemas/ItemName.schema.json",
+    "$schema": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.17.0/schemas/ItemName.schema.json",
     "Base.Apple": "Apple",
     "Base.Hammer": "Hammer"
 }
@@ -132,12 +132,12 @@ Update your `.vscode/settings.json` (or create the file and `.vscode` folder if 
     "json.schemas": [
         {
             "fileMatch": ["**/Translate/*/ItemName.json"],
-            "url": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.15.0/schemas/ItemName.schema.json",
+            "url": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.17.0/schemas/ItemName.schema.json",
             "name": "PZ ItemName Schema"
         },
         {
             "fileMatch": ["**/Translate/*/UI.json"],
-            "url": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.15.0/schemas/UI.schema.json",
+            "url": "https://raw.githubusercontent.com/escapepz/pz_translation_json_schema/42.17.0/schemas/UI.schema.json",
             "name": "PZ UI Schema"
         }
         // ... add the rest as needed

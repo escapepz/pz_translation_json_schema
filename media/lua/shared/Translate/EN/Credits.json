@@ -36,7 +36,7 @@
 
     "credits_role_group.quality_assurance": "QUALITY ASSURANCE",
     "credits_role.lead_qa_tis": "Quality Assurance Leader",
-    "credits_role.quality_assurance_manager": "Quality Assurance Manager",
+    "credits_role.senior_qa": "Senior QA Tester",
     "credits_role.quality_assurance_testers": "Quality Assurance Testers",
 
     "credits_role_group.administration": "ADMINISTRATION",
@@ -45,12 +45,11 @@
     "credits_role.junior_system_administrator": "Junior System Administrator",
     "credits_role.backup_sysadmin": "Backup System Administrator",
     "credits_role.tech_support": "Technical Support",
+    "credits_role.localisation_lead": "Localisation Lead",
     "credits_role.community_managers": "Community Managers",
     "credits_role.community_moderators": "Community Moderators",
-    "credits_role.website_maintenance": "Website Maintenance",
     "credits_role.operations_manager": "Operations Manager",
     "credits_role.finance": "Finance",
-    "credits_role.titles": "Titles",
 
     "credits_role_group.tea": "The Tea Division",
     "credits_role.director": "Director",

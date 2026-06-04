@@ -936,7 +936,7 @@
     "Sandbox_SeeNotLearntRecipe": "See Not Known Recipes",
     "Sandbox_SeeNotLearntRecipe_tooltip": "If true, you will be able to see any recipes that can be done with a station, even if you haven't learnt them yet.",
     "Sandbox_AnimalMatingSeason": "Breeding Season",
-    "Sandbox_AnimalMatingSeason_tooltip": "If animals with a mating season will respect it. \\nOtherwise they can reproduce/lay eggs all year round.",
+    "Sandbox_AnimalMatingSeason_tooltip": "If on, animals will only mate during their breeding season (if any). \\nOtherwise they can reproduce/lay eggs all year round.",
     "Sandbox_MaximumRatIndex": "Maximum Vermin Index",
     "Sandbox_MaximumRatIndex_tooltip": "The frequency and intensity of eg. rats in infested buildings.",
     "Sandbox_DaysUntilMaximumRatIndex": "Days Until Maximum Vermin Index",

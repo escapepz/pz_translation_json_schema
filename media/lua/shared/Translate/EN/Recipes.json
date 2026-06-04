@@ -822,7 +822,6 @@
     "SawIronBlockIntoChunks": "Saw Iron Block into Chunks",
     "SawIronIngotIntoBlocks": "Saw Iron Ingot into Blocks",
     "SawIronIntoPieces": "Saw Iron into Pieces",
-    "SawRailroadTrack": "Saw Railroad Track",
     "SawBarHalfIntoQuarters": "Saw Bar Half",
     "SawBarIntoHalves": "Saw Bar",
     "SawSteelBlockIntoChunks": "Saw Steel Block into Chunks",
@@ -858,7 +857,6 @@
     "CutBlockIntoChunks": "Cut Block into Chunks",
     "CutIngotIntoBlocks": "Cut Ingot into Blocks",
     "CutIronIntoPieces": "Cut Iron into Pieces",
-    "CutRailroadTrack": "Cut Railroad Track",
     "CutSteelBarHalfIntoQuarters": "Cut Steel Bar Half",
     "CutSteelBarIntoHalves": "Cut Steel Bar",
     "CutSteelBlockIntoChunks": "Cut Steel Block into Chunks",
@@ -1548,7 +1546,6 @@
     "MakeBoneChoker": "Make Bone Choker",
     "MakeBoneMask": "Make Bone Mask",
     "MakeCeramicCrucibleSmall": "Sculpt Small Ceramic Crucible",
-    "MakeWoodenCrucibleMold": "Make Wooden Crucible Mold",
     "MakeWoodenBenchAnvilMold": "Make Wooden Bench Anvil Mold",
     "MakeWoodenBlacksmithAnvilMold": "Make Wooden Blacksmith Anvil Mold",
     "MakeWoodenBlockAnvilMold": "Make Wooden Block Anvil Mold",
@@ -1909,5 +1906,7 @@
     "base:watermelon growing season": "Watermelon Growing Season",
     "base:wheat growing season": "Wheat Growing Season",
     "base:wild garlic growing season": "Wild Garlic Growing Season",
-    "base:zucchini growing season": "Zucchini Growing Season"
+    "base:zucchini growing season": "Zucchini Growing Season",
+    "RemoveRagFromImprovisedGasMask": "Remove Rag from Improvised Gas Mask",
+    "PutRagInImprovisedGasMask": "Put Rag in Improvised Gas Mask"
 }

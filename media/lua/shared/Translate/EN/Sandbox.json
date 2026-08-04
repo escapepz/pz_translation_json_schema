@@ -580,6 +580,7 @@
     "Sandbox_RallyGroupRadius": "Rally Group Radius",
     "Sandbox_ZombiesCountBeforeDelete": "Zombie count before deletion",
     "Sandbox_ZombiesCountBeforeDelete_tooltip": "How many zombies can occupy a certain area.",
+    "Sandbox_ZombiesCountBeforeDelete_help": "Controls the maximum number of zombies tracked before cleanup occurs. 0 means zombies will not be cleaned up.\\nThe default value (300) is strongly recommended. Increasing this value or setting to 0 may cause severe performance problems.\\nFor troubleshooting and bug-report purposes, please reproduce any issue with the default setting before submitting a report.",
     "Sandbox_PopulationMultiplier_help": "Set by the \"Zombie Count\" population option, or by a custom number here.\\nInsane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.65, Low = 0.15, None = 0.0.",
     "Sandbox_PopulationStartMultiplier_help": "A multiplier for the desired zombie population at the start of the game.\\nInsane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0.",
     "Sandbox_PopulationPeakMultiplier_help": "A multiplier for the desired zombie population on the peak day.\\nInsane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0.",
@@ -1080,5 +1081,7 @@
     "Sandbox_FogCycle_option2": "No Fog",
     "Sandbox_FogCycle_option3": "Endless Fog",
     "Sandbox_UniqueHomeVHS": "Unique Home VHS Tapes",
-    "Sandbox_UniqueHomeVHS_tooltip": "If true only one instance of an individual Home VHS tape will normally spawn."
+    "Sandbox_UniqueHomeVHS_tooltip": "If true only one instance of an individual Home VHS tape will normally spawn.",
+    "Sandbox_WaterShutModifier": "WaterShutModifier",
+    "Sandbox_ElecShutModifier": "ElecShutModifier"
 }

@@ -1,5 +1,5 @@
 ---
-name: translation_schema_management
+name: translation-schema-management
 description: Manage and update Project Zomboid translation JSON schemas to stay in sync with source translation files.
 ---
 
@@ -20,26 +20,32 @@ Project Zomboid translation files (`media/lua/shared/Translate/EN/*.json`) use a
 ## Workflow
 
 ### 1. Verify Current State
+
 Run the verification script to identify which schemas are out of sync.
 
 ```bash
-py .agent/skills/translation_schema_management/scripts/verify_translation_keys.py --schema_dir schemas --media_dir media/lua/shared/Translate/EN
+py .agent/skills/translation-schema-management/scripts/verify_translation_keys.py --schema_dir schemas --media_dir media/lua/shared/Translate/EN
 ```
 
 ### 2. Analyze Mismatches
+
 Examine the output. Focus on:
+
 - Keys that contain unexpected characters (spaces, slashes, apostrophes).
 - New naming conventions (e.g., `InfoBox` suffixes).
 - Module-prefixed keys (e.g., `base:Item`).
 
 ### 3. Update Schemas
-Modify the `patternProperties` in the relevant `.schema.json` file. 
+
+Modify the `patternProperties` in the relevant `.schema.json` file.
 
 **Pro-tip**: Use non-greedy or character-class inclusive regex.
+
 - Good: `^[A-Za-z0-9_\\s:\\./'!-]+$` (covers most UI/IGUI keys)
 - Good: `^[A-Za-z0-9_\\(\\): -]+$` (covers most Recipe keys)
 
 ### 4. Re-verify
+
 Run the script again to ensure zero mismatches for the updated schema.
 
 ## Guidelines

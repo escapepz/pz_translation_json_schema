@@ -101,6 +101,20 @@
 
     "credits_role_group.tools": " <SIZE:credits2> Tools <SIZE:medium> <LINE> <LINE> Audio engine : FMOD Studio by Firelight Technologies <LINE> <LINE> <IMAGECENTRE:media/ui/Logos/FMOD_credits.png> <LINE> <LINE> <LINE> Uses Bink Video. Copyright (C) 1997-2026 by Epic Games Tools LLC <LINE> <LINE> <IMAGECENTRE:media/ui/Logos/Bink_credits.png>",
 
+    "credits_role_group.uss": "Universally Speaking",
+    "credits_role.head_fqa": "Head of FQA",
+    "credits_role.qa_project_manager": "QA Project Manager",
+    "credits_role.lead_qa_uss": "QA Team Lead",
+    "credits_role.senior_qa_technicians": "Senior QA Technicians",
+    "credits_role.qa_technicians": "QA Technicians",
+    "credits_role.additional_support": "Additional Support",
+
     "credits_role_group.in_loving_memory_of": "IN LOVING MEMORY OF <LINE> ",
-    "credits_spiffos_url": "WWW.SPIFFOS.COM"
+    "credits_spiffos_url": "WWW.SPIFFOS.COM",
+
+    "credits_role.music_originally_composed_by": "",
+    "credits_role.research_and_development": "",
+    "credits_role.general_arcade": "",
+    "credits_role.localization": "",
+    "credits_role.in_loving_memory_of": ""
 }

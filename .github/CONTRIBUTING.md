@@ -40,7 +40,7 @@ pip install pre-commit
 Test the setup by running the verification script:
 
 ```bash
-python .agent/skills/translation_schema_management/scripts/verify_translation_keys.py
+python .agent/skills/translation-schema-management/scripts/verify_translation_keys.py
 ```
 
 This uses default paths:
@@ -62,7 +62,7 @@ The project contains:
 
 - `schemas/` - 30 JSON schema files
 - `media/lua/shared/Translate/EN/` - 42 translation files
-- `.agent/skills/translation_schema_management/` - verification scripts
+- `.agent/skills/translation-schema-management/` - verification scripts
 - Documentation files (README.md, Categories.md, etc.)
 
 ### Notes

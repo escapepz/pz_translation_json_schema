@@ -3,7 +3,7 @@ import json
 import re
 import argparse
 
-# py .agent/skills/translation_schema_management/scripts/verify_translation_keys.py --schema_dir schemas --media_dir media/lua/shared/Translate/EN
+# py .agent/skills/translation-schema-management/scripts/verify_translation_keys.py --schema_dir schemas --media_dir media/lua/shared/Translate/EN
 
 def clean_json_content(content):
     """Remove trailing commas and handle BOM."""

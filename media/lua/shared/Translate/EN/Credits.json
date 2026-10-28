@@ -10,7 +10,6 @@
     "credits_role.design_director": "Design Director",
 
     "credits_role_group.music_by": "Original Soundtrack composed by",
-    "credits_role.music_originally_composed_by": "",
 
     "credits_role_group.programming_team": "PROGRAMMING TEAM",
     "credits_role.lead_gameplay_programmer": "Lead Gameplay Programmer",
@@ -32,12 +31,11 @@
     "credits_role.writer": "Writers",
 
     "credits_role_group.research_and_development": "RESEARCH & DEVELOPMENT",
-    "credits_role.research_and_development": "",
 
     "credits_role_group.quality_assurance": "QUALITY ASSURANCE",
-    "credits_role.lead_qa_tis": "Quality Assurance Leader",
+    "credits_role.lead_qa_tis": "QA Leader",
     "credits_role.senior_qa": "Senior QA Tester",
-    "credits_role.quality_assurance_testers": "Quality Assurance Testers",
+    "credits_role.quality_assurance_testers": "QA Testers",
 
     "credits_role_group.administration": "ADMINISTRATION",
     "credits_role.hr": "Human Resources",
@@ -46,6 +44,7 @@
     "credits_role.backup_sysadmin": "Backup System Administrator",
     "credits_role.tech_support": "Technical Support",
     "credits_role.localisation_lead": "Localisation Lead",
+    "credits_role.lead_community_manager": "Lead Community Manager",
     "credits_role.community_managers": "Community Managers",
     "credits_role.community_moderators": "Community Moderators",
     "credits_role.operations_manager": "Operations Manager",
@@ -76,7 +75,6 @@
     "credits_role.head_producer": "Head Producer",
 
     "credits_role_group.general_arcade": "GENERAL ARCADE",
-    "credits_role.general_arcade": "",
 
     "credits_role_group.contributors": "CONTRIBUTORS",
     "credits_role.special_infected": "Special Infected",
@@ -85,12 +83,24 @@
     "credits_role.wiki_admin": "Wiki Admin",
     "credits_role.wiki_editors": "Wiki Editors",
 
-    "credits_role_group.localization": "LOCALIZATION <LINE> <LINE> <SIZE:medium> The PZ Community <LINE> (Individual Translator Credits found in Translation Options)",
-    "credits_role.localization": "",
+    "credits_role_group.localization": "COMMUNITY LOCALIZATION",
+    "credits_role_group.tmg": "TMG LOCALIZATION",
+    "credits_role.tmg_ua": "Ukrainian",
+    "credits_role.tmg_pt": "Português (Portugal)",
+    "credits_role.tmg_pl": "Polski",
+    "credits_role.tmg_no": "Norsk",
+    "credits_role.tmg_nl": "Nederlands",
+    "credits_role.tmg_ko": "Korean",
+    "credits_role.tmg_it": "Italiano",
+    "credits_role.tmg_hu": "Magyar",
+    "credits_role.tmg_fi": "Suomi",
+    "credits_role.tmg_de": "Deutsch",
+    "credits_role.tmg_da": "Dansk",
+    "credits_role.tmg_ch": "Chinese (Traditional)",
+    "credits_role.tmg_cn": "Chinese (Simplified)",
 
     "credits_role_group.tools": " <SIZE:credits2> Tools <SIZE:medium> <LINE> <LINE> Audio engine : FMOD Studio by Firelight Technologies <LINE> <LINE> <IMAGECENTRE:media/ui/Logos/FMOD_credits.png> <LINE> <LINE> <LINE> Uses Bink Video. Copyright (C) 1997-2026 by Epic Games Tools LLC <LINE> <LINE> <IMAGECENTRE:media/ui/Logos/Bink_credits.png>",
 
     "credits_role_group.in_loving_memory_of": "IN LOVING MEMORY OF <LINE> ",
-    "credits_role.in_loving_memory_of": ""
-
+    "credits_spiffos_url": "WWW.SPIFFOS.COM"
 }
